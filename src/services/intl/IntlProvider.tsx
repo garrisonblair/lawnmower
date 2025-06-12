@@ -1,7 +1,6 @@
 import React from "react";
 import { IntlProvider as ExtIntlProvider } from "react-intl";
 import { flattenMessages } from "./flattenMessages";
-import { useGetNavigatorLocale } from ".";
 
 type BaseLocalization = "fr" | "en";
 
@@ -29,7 +28,8 @@ const IntlProvider: React.FunctionComponent<
 
   const setUserLocale = () => {};
 
-  const baseLocale = useGetNavigatorLocale();
+  // const baseLocale = useGetNavigatorLocale();
+  const baseLocale: BaseLocalization = "fr"; // Default to French for this example
 
   return (
     <Context.Provider value={{ baseLocale: baseLocale, setUserLocale }}>

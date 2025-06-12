@@ -1,6 +1,16 @@
 {
-  "app_name": "APP NAME",
-  "login": {
-    "title": "Connexion"
+  "app_name": "Tondeuse BimBamJob",
+  "upload": {
+    "button": "Ajouter un fichier texte"
+  },
+  "actions": {
+    "reset": "Réinitialiser",
+    "next": "Suivant",
+    "all": "Résultat"
+  },
+  "information": {
+    "size": "Taille de la pelouse : {w} x {h}",
+    "mower": "Tondeuse {number}",
+    "position": "Position : ({x}, {y}) {direction}"
   }
 }
